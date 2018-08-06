@@ -11,13 +11,13 @@ class App extends React.Component {
             data: [
                 {
                     id: 1,
-                    text: 'clean room'
+                    text: 'Clean room'
                 }, {
                     id: 2,
-                    text: 'wash the dishes'
+                    text: 'Wash the dishes'
                 }, {
                     id: 3,
-                    text: 'feed my cat'
+                    text: 'Feed my cat'
                 }
             ]
         };
@@ -40,7 +40,7 @@ class App extends React.Component {
     render () {
         return (
             <div className={style.TodoApp}>
-                <Title title='TodoApp' length={this.state.data.length} />
+                <Title title='Todo_App' length={this.state.data.length} />
                 <TodoList items={this.state.data} remove={this.removeTodo.bind(this)} />
             </div>
         );
